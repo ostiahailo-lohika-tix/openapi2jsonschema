@@ -181,6 +181,7 @@ def default(output, schema, prefix, stand_alone, expanded, kubernetes, strict):
 
             updated = change_dict_values(specification, prefix, version)
             specification = updated
+            print(specification)
 
             if stand_alone:
                 base = "file://%s/%s/" % (os.getcwd(), output)
